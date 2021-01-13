@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GetWebPageSourceCode</string>
+    <string name="www_example_com">www.example.com</string>
+    <string name="http">http://</string>
+
+
+    <string-array name="protocol">
+        <item>http://</item>
+        <item>https://</item>
+    </string-array>
+</resources>
