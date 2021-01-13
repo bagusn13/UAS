@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
     // Instantiate the RequestQueue.
     RequestQueue queue = Volley.newRequestQueue(this);
-    //String url ="https://httpbin.org/html";
 
     spinner = findViewById(R.id.spinner);
 
@@ -57,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, Url, new Response.Listener<String>() {
           @Override
           public void onResponse(String response) {
-            // Display the first 500 characters of the response string.
-            tvPageSource.setText(response.substring(0, 500).replace("\n",""));
+            tvPageSource.setText(response.toString().replace("\n",""));
           }
         }, new Response.ErrorListener() {
           @Override
