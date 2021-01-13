@@ -58,20 +58,25 @@
         android:text="GET PAGE SOURCE"
         android:backgroundTint="@color/blueBootstrap"/>
 
-    <TextView
-        android:id="@+id/pageSourceCode"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:paddingTop="10dp"
-        android:paddingStart="10dp"
-        android:paddingBottom="10dp"
-        android:gravity="center_vertical"
-        android:background="@drawable/border"
-        android:textColor="@color/black"
-        android:text="Page source will appear here"
-        android:textSize="17sp"/>
+        android:layout_marginEnd="30dp">
+        <TextView
+            android:id="@+id/pageSourceCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border"
+            android:textColor="@color/black"
+            android:text="Page source will appear here"
+            android:textSize="17sp"/>
+    </ScrollView>
+
 
 </LinearLayout>
